@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<!--
+	ZeroFour by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Rubén Padilla Aguilar Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div class="container">
+
+						<!-- Header -->
+						<header id="header">
+							<div class="inner">
+
+								<!-- Logo -->
+									<h1><a href="index-S.html" id="logo">Portafolio de Análisis de Datos</a></h1>
+
+								<!-- Nav -->
+									<nav id="nav">
+										<ul>
+											<li class="current_page_item"><a href="index-S.html">Inicio</a></li>
+											<li>
+												<a href="#">Idiomas</a>
+												<ul>
+													<li><a href="SQL-S.html">Español</a></li>
+													<li><a href="SQL-E.html">Inglés</a></li>
+												</ul>												
+											</li>
+											<li><a href="#Contact1">Contactar</a></li>
+											<li>
+										</ul>
+									</nav>
+
+							</div>
+						</header>
+
+				<!-- Main -->
+					<div id="main-wrapper">
+						<div class="wrapper style2">
+							<div class="inner">
+
+						<!-- Post -->
+						<section class="container box feature2">
+							<div class="row">
+								<div class="col-12 col-12-medium">									
+										<header class="major">
+											<h2>Limpieza y Exploración de Datos</h2>
+											<p>Proyecto de SQL <strong>"Anonymous_Sales_2019"</strong></p>
+										</header>
+										<a class="image main"><img src="images/Anonymous_Sales_2019.jpg" alt="" width="500" height="400"/></a>
+										<p>Dominio: Transacciones de ventas.<br />
+											Creado por: Rubén Padilla Aguilar.<br />
+											Publicado en: 2-5-2023.<br />
+											Herramientas utilizadas: MS SQL Server y Tableau.<br />
+											Propósito del Proyecto: Limpieza y exploración de datos con SQL y visualización con Tableau.<br />								
+											Conceptos utilizados: CTE's, manejo de tablas y vistas, modificación de datos, tablas temporales, funciones de agregación, conversión de tipos de datos.<br />
+										</p>
+										<p style="text-align: justify;">
+											<strong>Información del conjunto de datos:</strong><br />
+											1. El conjunto de datos fue descargado de Kaggle bajo el nombre "SalesAnalysis" por Serdar Ozturk.<br />
+											2. El conjunto de datos es una compilación de 12 tablas, cada una contiene datos de un mes específico del año 2019.<br />
+											3. Cada tabla tiene entre 9.000 y 26.000 registros con datos y columnas con las características: Order ID, Product, Quantity Ordered, Price Each, Order Date y Purchase Address.<br />
+											4. Los datos estaban sucios con valores faltantes y valores no coincidentes.<br />
+											<br />
+											<strong>Problema empresarial:</strong><br />
+											En un escenario hipotético, una empresa tiene como objetivo analizar una gran cantidad de datos recolectados en el año pasado para poder tomar decisiones basadas en datos relacionados con el comportamiento del cliente. 
+											Para completar esta tarea, quieren limpiar los datos y realizar un análisis exploratorio con Microsoft SQL Server para determinar si la información recolectada es útil y relevante. Si es así, quieren crear un hermoso dashboard en Tableau. 
+											Para lograr estos diferentes procesos, proporcionan algunos ejemplos de lo que les gustaría saber, como el valor monetario y la cantidad de órdenes procesadas, las 10 mejores ventas y ubicaciones utilizando las variables disponibles y la distribución de ventas por mes, entre otros.<br />
+											<br />
+											<strong>Objetivo del proceso de limpieza:</strong><br />
+											1. Preparar los datos correctamente para poder implementarlos en los siguientes procesos, como exploración, análisis y visualización.<br />
+											<br />
+											<strong>Objetivos del proceso de exploración:</strong><br />
+											1. Categorizar información de múltiples variables basadas en su relevancia para el análisis de ventas.<br />
+											2. Comparar los datos en valor monetario y cuantitativo utilizando diferentes variables como el mes, la ciudad, el producto y así sucesivamente.<br />
+											3. Distinguir datos importantes como el producto más o menos ordenado, los mejores meses en ventas, entre otros.<br />
+											4. Cuestionar cómo obtener nuevas ideas, cómo mejorar estos datos en el futuro, etc.<br />
+											5. Identificar algunas recomendaciones para la empresa hipotética del problema empresarial.<br />
+											<br />
+											<strong>Resultados principales:</strong><br />
+											1. Se crearon tablas para la cantidad de productos ordenados para cada uno, número de estados desde donde los clientes realizaron pedidos, los 10 productos más ordenados del año, valor y cantidad generados por cada producto según el mes, 
+											valor total de cada pedido, dinero generado en pedidos cada mes, valor monetario de cada producto en el estado con el valor monetario general más bajo, y personas con la posibilidad de obtener una regalía.<br />
+											2. El producto más ordenado del año fue 'AAA Batteries (4-pack)' con una cantidad de 31.017 y las mejores ventas ocurrieron en diciembre.<br />
+											3. El mes con más dinero generado fue diciembre y el producto más vendido fue la computadora portátil MacBook Pro con una distribución relativa del 23,6%.<br />
+											4. La computadora portátil MacBook Pro es el producto más caro con una diferencia de precio de $700,01 en comparación con el segundo producto más caro, y las mejores ventas para este producto ocurrieron en diciembre.<br />
+											5. El estado de California (CA) vendió 11.000 computadoras portátiles MacBook Pro, convirtiéndose en el mejor estado en términos de ventas para este producto.<br />
+											6. Las personas con la posibilidad de obtener una regalía fueron aquellas que compraron más de una computadora portátil MacBook Pro ya que es el producto más caro. Sus Order_ID son 181069, 181544, 200528 y 210292.<br />
+											7. El estado con el valor monetario más bajo en términos de pedidos fue Maine (ME).<br />
+											<br />
+											<strong>Recomendaciones finales del análisis:</strong><br />
+											1. Crear un modelo estrella que recolecte más datos sobre clientes, pedidos, ventas y más.
+										</p>
+										<footer>
+											<ul class="actions special">
+												<li><a href="https://github.com/RubenAPA/Anonymous_Sales_2019.git" class="button large">Ver todo el proyecto</a></li>
+											</ul>
+										</footer>
+								</div>
+							</div>
+						</section>
+							</div>
+						</div>
+					</div>
+				
+			<!-- Footer Wrapper -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="col-3 col-6-medium col-12-small">
+
+							<!-- Links -->
+								
+						</div>
+						<div class="col-8 col-12-medium imp-medium">
+
+							<!-- Contact -->
+								<section id="Contact1">
+									<h2>Información de contacto</h2>
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<dl class="contact">
+													<dt>LinkedIN</dt>
+													<dd><a href="https://www.linkedin.com/in/rubenpadilla98/">rubenpadilla98</a></dd>
+													<dt>Github</dt>
+													<dd><a href="https://github.com/RubenAPA">RubenAPA</a></dd>
+													<dt>Email</dt>
+													<dd><a href="mailto:ruben.padillaaguilar15798@gmail.com">ruben.padillaaguilar15798@gmail.com</a></dd>
+												</dl>
+											</div>
+											<div class="col-6 col-12-small">
+												<dl class="contact">
+													<dt>Dirección</dt>
+													<dd>
+														San José<br />
+														Costa Rica
+													</dd>
+													<dt>Teléfono</dt>
+													<dd>(506) 8729-2927</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+								</section>
+
+						</div>
+						<div class="col-12">
+							<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+	</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
